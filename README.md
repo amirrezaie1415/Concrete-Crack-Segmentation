@@ -54,6 +54,9 @@ Stone-crack-segmentation
 ```
 > ⚠️ It is recommended to use images of the height and width of 256 pixels for the trainig and validation splits.
 
+> ⚠️ You need to create the directory ``dataset`` and put your training and validation images/annotations inside, and create empty directories ``models`` and ``logs`` for training. 
+
+
 ## 5. Train a model
 
 To train a deep model you can run the following command:
@@ -64,6 +67,9 @@ To train a deep model you can run the following command:
 
 ## 6. Inference
 
+To use the pre-trained model, dowlonad the checkpoint from [here](https://drive.google.com/file/d/1mzYa4EHYis3BN63r_7QROk8Hn0wLdL6x/view?usp=sharing), and put the ``.pth`` file in the ``./models/`` directory. 
+
+ 
 Put imagaes that you want to predict cracks for in the directory ``./dataset/test``; and run
 
 ```bash
