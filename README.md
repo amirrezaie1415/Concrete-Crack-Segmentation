@@ -1,6 +1,6 @@
 # Crack Segmentation in Concrete Surfaces
 
-This repo includes the codes for segmentation of crack pixels in images of concrete surfaces. The network architecture is borrowed from (https://github.com/ternaus/TernausNet), which is a variant of U-Net with a VGG16 encoder. To train the model, we used the public dataset [Concrete Crack Segmentation Dataset] (https://data.mendeley.com/datasets/jwsn7tfbrp/1).
+This repo includes the codes for segmentation of crack pixels in images of concrete surfaces. The network architecture is borrowed from (this repo)[(https://github.com/ternaus/TernausNet)], which is a variant of U-Net with a VGG16 encoder. To train the model, we used the public dataset (Concrete Crack Segmentation Dataset)[https://data.mendeley.com/datasets/jwsn7tfbrp/1].
 
 | Image          |  Prediction | Overlaied image |
 :-------------------------:|:-------------------------:|:-------------------------:|
