@@ -57,7 +57,8 @@ def main(config):
     # Load training data
     resizing_factor = 0.5
     train_transform = A.Compose(
-        [A.RandomRotate90(p=config.augmentation_prob),
+        [A.Resize(256, 256),
+         A.RandomRotate90(p=config.augmentation_prob),
          A.GridDistortion(p=config.augmentation_prob),
          A.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.2, p=config.augmentation_prob),
          A.Resize(int(config.image_size * resizing_factor), int(config.image_size * resizing_factor),
@@ -82,7 +83,7 @@ def main(config):
 
     # Load validation data
     valid_transform = A.Compose(
-        [A.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)), ToTensorV2()]
+        [A.Resize(256, 256), A.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)), ToTensorV2()]
     )
     valid_images_filenames = [i for i in os.listdir(config.valid_path) if i.lower().endswith(image_suffix)]
     valid_dataset = CrackDatasetTrainVal(images_filenames=valid_images_filenames,
