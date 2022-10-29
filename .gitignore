@@ -1,0 +1,7 @@
+*.pyc
+models/
+logs/
+dataset/
+predictions/
+.vscode/
+launch.json

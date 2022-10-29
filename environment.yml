@@ -1,0 +1,22 @@
+name: crack_detection
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - cudatoolkit=11.6
+  - pytorch=1.12
+  - torchvision=0.13.1
+  - pip
+  - pip:
+    - matplotlib
+    - numpy
+    - opencv-contrib-python
+    - scikit-image
+    - scikit-learn
+    - scipy
+    - torchsummary
+    - tqdm
+    - albumentations
+
