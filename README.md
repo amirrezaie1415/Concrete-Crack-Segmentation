@@ -40,7 +40,7 @@ conda activate crack_detection
 
 The structure of the project directory is as follows: 
 ```
-Stone-crack-segmentation
+Concrete-crack-segmentation
 └───dataset
     └───train 
     └───train_GT 
