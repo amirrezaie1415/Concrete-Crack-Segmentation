@@ -59,7 +59,7 @@ class Solver(object):
 
     def build_model(self):
         self.net = TernausNet16(pretrained=self.pretrained)
-        self.optimizerimages_filenames = optim.Adam(list(self.net.parameters()),
+        self.optimizer = optim.Adam(list(self.net.parameters()),
                                     self.lr, [self.beta1, self.beta2], weight_decay=self.weight_decay)
         self.net.to(self.device)
 
